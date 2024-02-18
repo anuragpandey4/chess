@@ -1,0 +1,50 @@
+#gameboard {
+  width: 320px;
+  height: 320px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative;
+  z-index: -9;
+  pointer-events: none;
+}
+
+svg path {
+  stroke: #646464;
+  stroke-width: 10px;
+  z-index: -10;
+  pointer-events: none;
+}
+
+.piece {
+  position: relative;
+  z-index: 9;
+}
+
+.boxwood {
+  background-color: rgb(100, 135, 103);
+}
+
+.off-white {
+  background-color: rgb(248, 240, 227);
+}
+
+.black {
+  fill: black;
+}
+
+.white {
+  fill: white;
+}
